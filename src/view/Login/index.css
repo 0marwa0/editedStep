@@ -1,0 +1,42 @@
+/** @format */
+/* .tostStyleError {
+  color: red;
+} */
+.login_page {
+  width: 25em;
+  padding: 40px 20px;
+  margin: 10% auto;
+  border-radius: 5px;
+
+  border: 1px solid var(--light-gray);
+}
+
+.login_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 5px;
+  transition: ease-in-out 2s;
+}
+.login_icon {
+  position: absolute;
+  margin: 5px;
+  top: 0;
+  left: 0;
+}
+.login_input input[type="text"],
+.login_input input[type="password"] {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.login_input {
+  position: relative;
+  /* 
+  grid-template-columns: 30px auto !important; */
+}
+.errorMsg {
+  color: red;
+
+  height: 20px;
+  font-size: 10px;
+}

@@ -1,0 +1,132 @@
+/** @format */
+body:target #tool {
+  display: hidden;
+}
+
+.sid_var_pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideNavLoader {
+  margin: auto;
+}
+.SideModal {
+  position: absolute;
+  top: 0;
+
+  right: 0;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  width: 400px;
+}
+
+.SideModal .Modal_inner_header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+
+  padding: 20px;
+}
+.SideModal .Modal_inner_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--lighter-gray);
+  overflow-y: auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sideNav_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 0;
+}
+.sideNav_item {
+  display: grid;
+  position: relative;
+  padding: 0.8em;
+  border-radius: 3px;
+  background-color: white;
+  grid-template-columns: 1fr auto;
+}
+.SideOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999999999;
+  backdrop-filter: blur(4px);
+  background-color: rgb(114, 111, 111, 0.2);
+}
+
+/***********************tooltip*********************/
+.tooltip_container_nav_nav {
+  /* position: relative; */
+}
+
+.tooltip_container_nav .tooltip {
+  background: white;
+  box-shadow: 1px 1px 10px 1px rgba(175, 175, 175, 0.2);
+  border-radius: 7px;
+  display: block;
+  top: -30px;
+  position: absolute;
+  right: 60px;
+  padding: 15px;
+
+  width: max-content;
+  z-index: 11029;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+.tooltip_container_nav .tooltip_content {
+  display: flex;
+  font-size: 13px;
+
+  flex-direction: column;
+}
+.tooltip_container_nav .warning_icon {
+  color: orange;
+  font-size: 20px;
+}
+.tooltip_container_nav .tooltip_content button {
+  padding: 0.2em 0.5em !important;
+}
+.tooltip_container_nav .tooltip_content span {
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 8px;
+}
+
+.tooltip_container_nav .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid white 10px;
+  bottom: 0;
+  content: " ";
+  height: 0;
+  top: 10px;
+  right: -14px;
+
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 0;
+}

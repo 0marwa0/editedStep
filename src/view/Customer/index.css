@@ -1,0 +1,17 @@
+/** @format */
+.orderModel {
+}
+.orderModel .header {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  padding: 20px 27px;
+  margin: 0;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.orderModel img {
+  width: 250px;
+  height: auto;
+  margin: 10px 250px;
+}

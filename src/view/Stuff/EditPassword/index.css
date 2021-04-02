@@ -1,0 +1,13 @@
+/** @format */
+
+.edit_model {
+  display: grid;
+
+  align-items: center;
+
+  justify-content: center;
+}
+.eye_icon {
+  color: var(--gray);
+  margin: 0 5px;
+}

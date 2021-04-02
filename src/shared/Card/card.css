@@ -1,0 +1,116 @@
+/** @format */
+.card-1 {
+  animation: homeCards 0.5s;
+}
+.card-2 {
+  animation: homeCards 0.8s;
+}
+.card-3 {
+  animation: homeCards 1.2s;
+}
+@keyframes homeCards {
+  0% {
+    opacity: 0;
+
+    transform: translateY(60px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.cards_container {
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+}
+.card_wrapper {
+  /* animation: moveTop 1.1s ease-in-out; */
+  margin-top: 5%;
+  margin-right: 15px;
+  width: 343px;
+  height: 460px;
+  padding: 70px 25px;
+  border-radius: 2%;
+  font-size: 13px;
+  border: 1px solid var(--light-gray);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+/* @keyframes moveTop {
+  0% {
+    transform: translateY(-30);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+.card_text {
+  color: var(--gray);
+  font-size: 15px;
+  margin-top: -10px;
+}
+.card_title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.card_icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  background-color: var(--light-blue);
+}
+.card_btn {
+  width: 180px;
+  height: 28px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  display: flex;
+  font-size: 14px;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(78, 76, 76);
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.card_wrapper:hover {
+  box-shadow: 0 0 11px rgba(10, 10, 10, 0.2);
+}
+.card_btn:hover {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+.card_btn_icon {
+  color: var(--gray);
+}
+.card_btn:hover .card_btn_icon {
+  color: var(--blue);
+}
+@media only screen and (max-width: 1300px) {
+  .cards_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

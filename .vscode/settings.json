@@ -1,0 +1,23 @@
+{
+    "emmet.triggerExpansionOnTab": true
+    ,
+    "emmet.showSuggestionsAsSnippets": true,
+"editor.snippetSuggestions": "top"
+,"emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "plaintext": "jade"
+},
+"emmet.excludeLanguages": [
+
+    "markdown",
+    "HTML",
+    "javaScript"
+],
+"prettier.insertPragma": true,
+"prettier.vueIndentScriptAndStyle": true,
+"prettier.jsxBracketSameLine": true,
+"prettier.jsxSingleQuote": true,
+"prettier.resolveGlobalModules": true,
+"editor.formatOnSave": true
+}

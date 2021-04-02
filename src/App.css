@@ -1,0 +1,290 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-spacing: 5px;
+  font-weight: 500;
+  font-family: "CircularStd", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.loading {
+  opacity: 0.5;
+  color: var(--light-gray) !important;
+  background-color: rgb(236, 234, 234) !important;
+  cursor: not-allowed !important;
+  border-radius: 5px;
+  pointer-events: all !important;
+}
+:root {
+  --red: #f72f57;
+  --blue: #3b86ff;
+  --black: #24292e;
+  --white: #ffffff;
+  --green: #18dc6c;
+  --gray: #808d93;
+  --dark-gray: #707070;
+  --light-gray: #e1e4e8;
+  --sky-gray: #ced9eb;
+  --offWhite: #f4f7fc;
+  --light-blue: #ebf3ff;
+  --lighter-gray: #f6f8fa;
+  --bright-gray: #d9d9d9;
+}
+.input_wrapper {
+  display: grid;
+  position: relative;
+  /* background-color: rebeccapurple; */
+  grid-template-columns: auto;
+}
+.input_wrapper p {
+  font-size: 13px;
+
+  margin-bottom: 10px;
+}
+.input_error p {
+  font-size: 13px;
+  margin: 2% 0;
+}
+.input_icon {
+  top: 3px;
+  right: 0;
+
+  margin: 8px 14px;
+  font-size: 10px;
+  position: absolute;
+}
+/* .input_wrapper > div {
+  border: 1px solid var(--bright-gray);
+  border-radius: 5px;
+  padding-right: 7px;
+  display: grid;
+  width: 100%;
+
+  align-items: center;
+  grid-template-columns: auto max-content;
+} */
+
+/* .input_wrapper > div .input_wrapper {
+  border-right: none;
+}
+.input_wrapper > div {
+  height: 33px;
+} */
+
+.two_col_flex {
+  display: grid;
+  grid-gap: 30px;
+  row-gap: 10px;
+  grid-template-columns: 3fr 3fr;
+}
+/* .two_col_flex {
+  display: grid;
+  grid-gap: 5px;
+
+  grid-template-columns: 3fr 3fr;
+} */
+
+.space_wrapper {
+  /* padding: 10px 0px; */
+  padding-top: 10px;
+}
+.warp_flex {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+}
+
+.input_wrapper input[type="text"],
+.input_wrapper input[type="password"],
+.input_error input[type="text"],
+.input_error input[type="password"],
+.input_error input[type="number"],
+.input_wrapper input[type="number"],
+textarea {
+  font-size: 14px;
+  height: 28px;
+  border: 1px solid var(--light-gray);
+  width: 100%;
+  padding-left: 10px;
+  color: black !important;
+  height: 35px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+  padding-right: 35px;
+  border-radius: 5px;
+}
+.input_error input[type="number"],
+.input_wrapper input[type="number"] {
+  padding-right: 5px !important;
+}
+
+.input_error input[type="text"],
+.input_error input[type="password"],
+.input_error input[type="number"]:focus {
+  border: 1px solid red !important;
+}
+
+.input_error input[type="text"]:focus,
+.input_error input[type="password"]:focus,
+.input_error input[type="number"]:focus {
+  box-shadow: 0 0 1.5px red;
+}
+.input_wrapper input[type="text"]:hover,
+.input_wrapper input[type="password"]:hover,
+textarea:hover,
+.input_wrapper input[type="number"]:hover {
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+button {
+  outline: none !important;
+}
+img {
+  cursor: pointer;
+}
+/* .input_wrapper .input_border {
+  display: grid;
+
+  grid-template-columns: auto;
+  border: 1px solid var(--bright-gray);
+  border-radius: 5px;
+} */
+
+.input_wrapper input[type="text"]:focus,
+.input_wrapper input[type="password"]:focus,
+.input_wrapper input[type="number"]:focus,
+textarea:focus {
+  /* border: none;
+  outline: none !important; */
+
+  box-shadow: 0 0 3px rgba(113, 218, 247, 1);
+}
+textarea {
+  resize: none;
+  padding: 10px;
+}
+.input_wrapper input::placeholder {
+  color: rgb(201, 198, 198);
+
+  /* font-size: 14px; */
+}
+.tostStyle {
+  text-align: center;
+  padding: 20px !important;
+  width: max-content;
+
+  border-radius: 10px !important;
+}
+.container {
+  max-width: 1080px !important;
+  width: 100%;
+
+  margin: 0 auto !important;
+}
+
+.btn {
+  border: 1px solid var(--light-gray);
+  cursor: pointer !important;
+
+  padding: 0.6em 0.7em;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 7px;
+  color: rgb(83, 80, 80);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn_ctrl {
+  color: white;
+  background-color: var(--blue);
+}
+.loader_wrapper {
+  width: 100%;
+  height: 150px;
+  border: 1px solid var(--lighter-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/****number input *****/
+.input_number {
+  position: relative;
+  cursor: text;
+}
+.input_arrows {
+  position: absolute;
+  top: 2px;
+  right: 0;
+
+  /* pointer-events: all; */
+}
+.input_arrows span {
+  border-left: 1px solid rgba(113, 218, 247, 1);
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+  padding: 2.5px 5px;
+  cursor: pointer;
+  color: rgba(113, 218, 247, 1);
+}
+
+@media only screen and (max-width: 1220px) {
+  * {
+    word-spacing: 0;
+  }
+  /* .warp_flex {
+    grid-template-columns: 1fr 1fr;
+  } */
+}
+/* @media only screen and (max-width: 755px) {
+  .two_col_flex,
+  .warp_flex {
+    grid-template-columns: auto;
+  }
+  .space_wrapper p {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 9px !important;
+  }
+  .space_wrapper {
+    padding: 0px;
+  }
+} */
+/* @media only screen and (max-width: 385px) {
+  .input_wrapper input[type="text"],
+  .input_wrapper input[type="password"] {
+    width: 80%;
+    height: 80%;
+
+  }
+  .input_wrapper .input_border {
+    height: 80%;
+  }
+} */
+/* @media only screen and (max-width: 449px) {
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .input_wrapper input[type="text"]:focus,
+  .input_wrapper input[type="password"]:focus {
+    font-size: 9px;
+  }
+  .input_wrapper input::placeholder {
+    font-size: 9px;
+  }
+} */

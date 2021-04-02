@@ -1,0 +1,128 @@
+/** @format */
+@keyframes listFade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.ListType_2_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+.listType_item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* align-items: center; */
+  height: 100px;
+  padding-right: 10px;
+  animation: listFade 0.6s;
+  border-radius: 6px;
+  border: 1px solid var(--light-gray);
+}
+.listType_item p {
+  margin: 0.5% 0;
+}
+.listType_item p:nth-child(1) {
+  margin-top: 2%;
+  font-size: 22px;
+  font-weight: 500;
+}
+.listType_item p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+}
+.listType_item p:nth-child(3) {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--light-gray);
+  margin-bottom: 2%;
+}
+.listType_item img {
+  width: 100px;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+}
+.customize_holder {
+}
+.customize_filter {
+  display: grid;
+
+  margin-right: 6%;
+  margin-top: 3%;
+  /* padding: 25px 0; */
+  align-items: center;
+
+  grid-template-columns: auto 1fr 0.1fr;
+}
+.listType_content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  justify-content: flex-start;
+}
+.tab-panel__header {
+  /* font-family: "Trebuchet MS";
+  font-size: 12px;
+  position: relative;
+  top: 1px; */
+}
+
+.tab-panel__content {
+  /* background-color: #d5d5d5;
+  border: 1px solid #9099a2;
+  height: 400px; */
+  margin-top: -25px;
+}
+
+.tab {
+}
+.tab_icon {
+  float: right;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+.tab:nth-child(n + 2) {
+  margin-left: -8px;
+}
+
+.tab:hover {
+  color: #6d7993;
+}
+
+.tab--selected {
+  border-bottom: 1px solid #d5d5d5;
+  color: #6d7993;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 6px;
+  z-index: 1;
+}
+/* @keyframes moveTopItem {
+  0% {
+    transform: translateY(-5);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-10);
+  } */
+
+@media screen and (max-width: 528px) {
+  .customize_filter {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+}

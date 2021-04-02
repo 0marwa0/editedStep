@@ -1,0 +1,148 @@
+/** @format */
+
+.Modal {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  animation: listFade 0.6s;
+  background-color: white;
+}
+.Modal-lg {
+  position: absolute;
+  top: 0;
+  left: 23%;
+  display: flex;
+  animation: listFade 0.6s;
+  flex-direction: column;
+  border-radius: 20px;
+  height: 100vh;
+  background-color: white;
+}
+.DisableBtn {
+  background-color: var(--lighter-gray) !important;
+  border: 1px solid var(--light-gray) !important;
+  color: var(--light-gray) !important;
+  cursor: not-allowed !important;
+}
+.Modal-sm {
+  animation: listFade 0.6s;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+
+  background-color: white;
+}
+.Modal_inner {
+  position: relative;
+
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  height: 1000px !important;
+}
+.next_btn {
+  color: var(--blue) !important;
+  background-color: rgb(234, 243, 248) !important;
+}
+.Modal_contaner {
+  margin: 20px 30px;
+}
+.Modal_header,
+.DeleteModal_header {
+  width: 100%;
+  background-color: var(--lighter-gray);
+  height: 55px;
+
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 3fr auto;
+  border-radius: 20px 20px 0 0;
+}
+.Modal_header span,
+.DeleteModal_header span {
+  padding-left: 30px;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999999999;
+  backdrop-filter: blur(4px);
+  background-color: rgb(114, 111, 111, 0.2);
+  overflow-y: scroll;
+}
+
+.CloseModal_icon {
+  padding: 0 30px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.Modal_footer {
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  grid-gap: 10px;
+  color: rgb(196, 193, 193);
+
+  align-items: center;
+  /* padding-top: 10px;*/
+  padding-left: 28px;
+  padding-right: 17px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+  height: 3.5rem;
+  background-color: white;
+  right: 0;
+  border: 1px solid var(--lighter-gray);
+  justify-content: space-between;
+  border-bottom: none;
+}
+.DeleteModal_btn {
+  background-color: var(--red) !important;
+  color: white !important;
+}
+.DeleteModal_header {
+  color: var(--red) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .Modal_header,
+  .Modal_footer,
+  .Modal_footer button {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .Modal_header,
+  .Modal_footer,
+  .Modal_footer button {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 270px) {
+  .Modal_header,
+  .Modal_footer.Modal_footer button {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Modal,
+  .Modal-lg,
+  .Modal-sm {
+  }
+}

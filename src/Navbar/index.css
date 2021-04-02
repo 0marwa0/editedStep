@@ -1,0 +1,21 @@
+/** @format */
+
+.navBar {
+  background-color: var(--black);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+
+  top: 0;
+}
+.navBar div {
+  margin: 0 20px;
+}
+.nav_icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
